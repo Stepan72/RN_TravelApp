@@ -17,6 +17,7 @@ import {
 import { MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import CategoriesList from "../components/CategoriesList";
 import SortCategories from "../components/SortCategories";
+import DestinationsList from "../components/DestinationsList";
 
 export default function HomeScreen({ route, navigation }: HomeScreenProps) {
   const topMargin = Platform.OS === "ios" ? "mt-3" : "mt-10";
@@ -28,7 +29,7 @@ export default function HomeScreen({ route, navigation }: HomeScreenProps) {
         className={`space-y-6 ${topMargin}`}
       >
         {/* avatar */}
-        <View className="mx-5 flex-row justify-between items-center mb-10">
+        <View className="mx-5 flex-row justify-between items-center mb-8">
           <Text
             className="font-bold text-neutral-700"
             style={{ fontSize: wp(7) }}
@@ -63,7 +64,7 @@ export default function HomeScreen({ route, navigation }: HomeScreenProps) {
         </View>
         {/* destinations */}
         <View>
-          <SortCategories />
+          <DestinationsList />
         </View>
       </ScrollView>
     </SafeAreaView>
