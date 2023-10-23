@@ -6,6 +6,7 @@ import {
 } from "react-native-responsive-screen";
 import { LinearGradient } from "expo-linear-gradient";
 import { WelcomeScreenProps } from "../types";
+import { StatusBar } from "expo-status-bar";
 
 export default function WelcomeScreen({
   route,
@@ -13,6 +14,7 @@ export default function WelcomeScreen({
 }: WelcomeScreenProps) {
   return (
     <View className="flex flex-1 justify-end">
+      <StatusBar style="light" />
       {/* backgroundImage */}
       <Image
         source={require("../assets/images/welcome.png")}

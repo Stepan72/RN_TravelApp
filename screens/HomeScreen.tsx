@@ -18,12 +18,14 @@ import { MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import CategoriesList from "../components/CategoriesList";
 import SortCategories from "../components/SortCategories";
 import DestinationsList from "../components/DestinationsList";
+import { StatusBar } from "expo-status-bar";
 
 export default function HomeScreen({ route, navigation }: HomeScreenProps) {
   const topMargin = Platform.OS === "ios" ? "mt-3" : "mt-10";
 
   return (
     <SafeAreaView className="flex-1 bg-white">
+      <StatusBar style="dark" />
       <ScrollView
         showsVerticalScrollIndicator={false}
         className={`space-y-6 ${topMargin}`}

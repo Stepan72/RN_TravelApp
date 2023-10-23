@@ -26,13 +26,13 @@ export default function DestinationCard({
   image,
 }: DestinationType) {
   const [isFavorite, setIsFavorite] = useState(false);
-  const navigate = useNavigation<DestinationNavigationProp>();
+  const navigation = useNavigation<DestinationNavigationProp>();
 
   return (
     <View>
       <TouchableOpacity
         onPress={() => {
-          navigate.navigate("Destination", {
+          navigation.navigate("Destination", {
             title,
             duration,
             distance,
@@ -41,6 +41,7 @@ export default function DestinationCard({
             shortDescription,
             longDescription,
             image,
+            isFavorite,
           });
         }}
         style={{ width: wp(44), height: wp(65) }}

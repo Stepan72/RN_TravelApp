@@ -14,6 +14,7 @@ export type StackParamList = {
     shortDescription: string;
     longDescription: string;
     image: ImageProps;
+    isFavorite: boolean;
   };
 };
 
