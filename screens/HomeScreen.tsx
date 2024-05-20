@@ -31,7 +31,7 @@ export default function HomeScreen({ route, navigation }: HomeScreenProps) {
         className={`space-y-6 ${topMargin}`}
       >
         {/* avatar */}
-        <View className="mx-5 flex-row justify-between items-center mb-8">
+        <View className="mx-5 flex-row justify-between items-center">
           <Text
             className="font-bold text-neutral-700"
             style={{ fontSize: wp(7) }}
